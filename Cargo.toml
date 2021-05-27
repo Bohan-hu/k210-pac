@@ -11,10 +11,9 @@ edition = "2018"
 
 [dependencies]
 bare-metal = "0.2.4"
-riscv = "0.6.0"
 riscv-rt = { version = "0.8", optional = true }
 vcell = "0.1.2"
-riscv = { git = "https://github.com/rcore-os/riscv", features = ["inline-asm"] }
+riscv = { version = "0.6.0", git = "https://github.com/rcore-os/riscv", features = ["inline-asm"] }
 
 [features]
 rt = ["riscv-rt"]
